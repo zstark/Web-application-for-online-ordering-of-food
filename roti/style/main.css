@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch:700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body{
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+	background-color: rgba(0, 0, 0, 0.0);
+}
+
+::-webkit-scrollbar
+{
+	width: 6px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 3px;
+	background-color: rgba(195, 69, 75, 0.9);
+}
+.roughcopy-logo{
+	font-family: 'Cabin Sketch', cursive;
+	font-weight: 700;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select:none;
+	user-select:none;
+	-o-user-select:none;
+	cursor: default;
+}
+.roughcopy-logo-default::before{
+	content:"Rough Copy";
+}
+.content-loader>content{
+	transition: all 0.2s ease-in-out;
+	overflow: visible;
+	display: block;
+	width: auto;
+	margin: 0 auto;
+}
+.content-loader>loader{
+	transition: all 0.2s ease-in-out;
+}
+.content-loader:target>content{
+	display: none;
+	/*width: 0;*/
+	overflow: hidden;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+content>fixer{
+	display: inline-block;
+
+}
+.transparent{
+	opacity: 0;
+}
+.opaque{
+	opacity: 1;
+}
+.hidden{
+	display: none;
+}
+.clear-fix{
+	clear: both;
+	height: 0;
+	width: 0;
+}
+.ltr{
+	text-align: left;
+}
+.rtl{
+	text-align: right;
+}
+
+a:link {
+    color: #000;
+}
+a:visited {
+    color: #000;
+}
+a:hover {
+    color: #111;
+}
+a:active {
+    color: #111;
+}
+.mouse{
+
+}
+.mouse-clickable{
+	cursor: pointer;
+}
+.mouse-arrow{
+	cursor: default;
+}
+
+.border{
+	
+}
+
+.border-bottom{
+	border-bottom: 1px solid #aaa; 
+}
+
+.border-top{
+	border-top: 1px solid #aaa;
+}
+
+.border-left{
+	border-left: 1px solid #aaa;
+}
+
+.border-right{
+	border-right: 1px solid #aaa;
+}
+
+.border-all{
+	border: 1px solid #aaa;
+}
+
+.border-vertical{
+	border-top:1px solid #aaa;
+	border-bottom:1px solid #aaa;
+}
+
+.border-horizontal{
+	border-left:1px solid #aaa;
+	border-right:1px solid #aaa;
+}
+
+.border-all{
+	border-top:1px solid #aaa;
+	border-bottom:1px solid #aaa;
+	border-left:1px solid #aaa;
+	border-right:1px solid #aaa;
+}
+
+.border-none{
+	border:none;
+}
+
+.background{
+
+}
+
+.background-none{
+	background: none;
+}
+
+p{
+	padding: 5px;
+}
+
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    margin-left: -60px;
+    
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip .tooltiptext-right {
+    top: 3px;
+    left: 105%; 
+}
+
+.tooltip .tooltiptext-left {
+    top: 3px;
+    right: 105%; 
+}
+
+.tooltip .tooltiptext-top {
+    width: 120px;
+    bottom: 100%;
+    left: 50%; 
+    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+.tooltip .tooltiptext-bottom {
+    width: 120px;
+    top: 100%;
+    left: 50%; 
+    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip .tooltiptext-top::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip .tooltiptext-bottom::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+.tooltip .tooltiptext-right::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+
+.tooltip .tooltiptext-left::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 100%; /* To the right of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+}
+
+.editable{
+    contenteditable: true;
+}

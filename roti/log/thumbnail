@@ -1,0 +1,18 @@
+THUBMNAIL($_CLASS , $_STYLE)
+	>THUMBNAIL-COVER($_ALT, $_ALT_STYLE)
+		>THUMBNAIL-TEXT,THUMBNAIL-GLIDER
+			>THUMBNAIL-INFO
+
+createThumbnail($_TITLE = "", $_INFO = "", $_CLASS = "", $_ALT="", $_IMAGE="", $_STYLE="" , $_STYLE_ALT="", $_STYLE_GLIDER="", $_ID = NULL)
+
+$_IMAGE = path of image if thumbnail is used for showing image
+
+$_CLASS = generic class(es) | long | large | cover | image | heading | sub-heading | quote | alt | indi | unfixed
+
+$_ALT = hidden(generic classs) | alt | static | transparent | opaque
+
+$_STYLE = style attribute of THUMBNAIL
+
+$_ALT_STYLE = style attribute of THUMBNAIL-COVER
+
+$_STYLE_GLIDER = style attribute of THUMBNAIL-GLIDER

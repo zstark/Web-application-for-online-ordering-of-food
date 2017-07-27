@@ -1,0 +1,64 @@
+Generic Classes List
+---------------------
+
+*override other styles
+
+//CURSOR -> clickable
+			arrow
+			*mouse
+
+//DISPLAY -> transparent
+			  hidden
+			  opaque
+
+//FLOAT -> left
+		   right
+		   clear-fix
+
+//ALIGNMENT -> ltr
+			   rtl
+
+//BACKGROUND -> background-none
+				*background
+
+//BORDER -> border-<direction>
+			*border
+
+
+
+
+Author Functions
+-----------------
+
+1. New/Edit/Suggest Edits - Style/Content/Post/Data/Page
+
+
+
+
+Data
+-----
+
+name - ui field for searching etc.
+type - text   |   image
+file - url of text (relative to ./data)    |  url of image(relative to ./images)
+content - text/html content associated with the data (na if file != NULL)
+
+
+
+
+Style
+------
+
+style of thumbnails
+
+
+
+
+Content
+--------
+
+[type:"content", value:"[content,content,...]"]
+
+[type:"data", style:"style_id", data:"data_id", id:"id", title:"title", info:"info", text:"text", style_text:""]
+
+[type:"indirect", content:"content_id"]

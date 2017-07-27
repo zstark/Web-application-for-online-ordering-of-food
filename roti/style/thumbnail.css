@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono');
+
+.thumbnail{
+	width: 150px;
+	height: 170px;
+	display: inline-block;
+	padding: 10px;
+	margin: 2px 2px;
+	text-align: right;
+	vertical-align: bottom;
+	position: relative;
+	font-family: 'Cutive Mono', sans-serif;
+	font-weight: 600;
+	font-size: 15px;
+	font-style: normal;
+	/*letter-spacing: -0.5px;
+	word-spacing: -2px;*/
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	overflow: hidden;
+}
+
+.thumbnail:not(.mouse){
+	cursor: default;
+}
+
+.thumbnail:not(.background){
+	background-color: #aaa;
+	background-size:cover;
+}
+
+.thumbnail.long{
+	height: 364px;
+}
+.thumbnail.large{
+	width: 324px;
+}
+.thumbnail.cover{
+	width: auto;
+	float: none;
+	display: block;
+	clear: both;
+}
+.thumbnail.image{
+	
+}
+
+.thumbnail.heading{
+	font-size:20px;
+}
+
+.thumbnail.heading.alt{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 45px;
+	font-weight: 400;
+	padding: 0;
+	height: 100px;
+}
+
+.thumbnail.heading.alt:not(.background){
+	background: none;
+}
+
+.thumbnail.sub-heading{
+	font-size: 18px;
+	height: 48px;
+	padding: 0;
+}
+
+.thumbnail.sub-heading:not(.background){
+	background: rgba(0,0,0,0.1);
+}
+
+.thumbnail.sub-heading.ltr:not(.border){
+	border-left: 4px solid;
+}
+.thumbnail.sub-heading.rtl:not(.border){
+	border-right: 4px solid;
+}
+
+.thumbnail.quote{
+	font-size: 18px;
+	font-weight: 400;
+	height: 54px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.thumbnail.quote:not(.background){
+	background: rgba(0,0,0,0.1);
+}
+
+.thumbnail.quote.ltr:not(.border){
+	border-left: 4px solid #aaa;
+}
+.thumbnail.quote.rtl:not(.border){
+	border-right: 4px solid #aaa;
+}
+
+.thumbnail.indi{
+	margin: 10px;
+}
+
+
+.thumbnail>img{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+}
+
+.thumbnail.heading>img{
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+}
+
+
+.thumbnail-cover{
+	background-color: rgba(206, 92, 87, 0.0);
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top:10px;
+	padding: 0%;
+	transition: all 0.2s ease-in-out;
+}
+.thumbnail-cover.transparent{
+	opacity: 1;
+}
+.thumbnail-cover.opaque{
+	background-color: rgba(206, 92, 87, 0.9);
+}
+
+.thumbnail-cover.alt{
+	position: absolute;
+	left: 0;
+	top: auto;
+	bottom: 0px;
+	height: 42px;
+    background-color: rgba(0, 0, 0, 0.3);
+    background: -webkit-linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5));
+    background: -o-linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5));
+    background: -moz-linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5));
+    background: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5));
+    
+}
+.heading.thumbnail>.thumbnail-cover.alt{
+	height: 46px;
+}
+
+.thumbnail-cover.static{
+	top: 0;
+}
+
+
+.thumbnail-cover.alt.static{
+	top: auto;
+	bottom: 0px;
+	height: 48px;
+	background-color: rgba(0,0,0,0.2);
+    background: -webkit-linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5));
+    background: -o-linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5));
+    background: -moz-linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5));
+    background: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5));
+}
+.thumbnail-cover.alt.opaque{
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.thumbnail.heading>.thumbnail-cover.alt.static{
+	height: 53px;
+}
+
+
+.thumbnail:hover>.thumbnail-cover:not(.transparent) {
+    background-color: rgba(206, 92, 87, 0.9);
+    top: 0;
+}
+
+
+
+.thumbnail:hover>.thumbnail-cover.alt:not(.transparent) {
+    top:auto;
+    bottom: 0px;
+    height: 48px;
+    /*height: 60px;*/
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.thumbnail.heading:hover>.thumbnail-cover.alt{
+	height: 53px;
+}
+
+
+.thumbnail-text{
+	/*'Cantarell', */
+	margin:0px;
+	bottom:10px;
+	right: 10px;
+	position: absolute;
+}
+
+.thumbnail-cover.alt>.thumbnail-text,.thumbnail-cover.alt>.thumbnail-glider{
+	right: 20px;
+}
+
+.thumbnail-cover>.thumbnail-glider{
+	position: absolute;
+	bottom:0px;
+	right: 10px;
+	transition: all 0.4s cubic-bezier(0, 0.5, 0.9, 1.21);
+}
+.thumbnail:hover>.thumbnail-cover>.thumbnail-glider {
+    bottom:10px;
+}
+.thumbnail.ltr>.thumbnail-cover>.thumbnail-glider,.thumbnail.ltr>.thumbnail-cover>.thumbnail-text{
+	right: auto;
+	left: 20px;
+	text-align: left;
+}
+
+.thumbnail-glider>.thumbnail-info{
+	opacity: 0;
+}
+
+.thumbnail-cover.static>.thumbnail-glider{
+	position: absolute;
+	bottom:10px;
+}
+
+.thumbnail-cover.static>.thumbnail-glider>.thumbnail-info{
+	opacity: 1;
+}
+
+.thumbnail-info{
+	display: block;
+	transition: all 0.4s ease-in-out;
+	/*'Cutive Mono'*/
+	font-family: monospace;
+    font-size: 11px;
+    font-weight: 100;
+    letter-spacing: normal;
+    word-spacing: normal;
+    min-height: 3px;
+}
+
+.thumbnail:hover .thumbnail-info {
+    opacity:1;
+}
+/*@media all and (max-width: 350px) {
+	.thumbnail{
+		margin: 2px 2px;
+	}
+}*/
